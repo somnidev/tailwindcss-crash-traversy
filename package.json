@@ -1,0 +1,15 @@
+{
+  "name": "tailwindcss-crash-traversy",
+  "version": "1.0.0",
+  "description": "Based upon [Tailwind CSS Crash Course](https://www.youtube.com/watch?v=UBOj6rqRUME) By Brad Traversy",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/style.css -o ./dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
