@@ -86,6 +86,8 @@ we have our button and notice there's no BTN class or anything like that like yo
 <button class="bg-sky-500 hover:bg-sky-400 text-white font-bold py-2 px-4 my-5 rounded">Find Friends</button>
 ```
 
+### Adding a Container
+
 I'm gonna add a container there is a container class like there is and just about every framework and let's move the button into the container div
 here and if I save this and I go back notice that it's not pushed over by default like it is in most frameworks.
 
@@ -102,6 +104,65 @@ If we want this to be margin auto and maybe add some padding we could add utilit
     <button class="bg-sky-500 hover:bg-sky-400 text-white font-bold py-2 px-4 rounded">Find Friends</button>
 </div>
 ```
+
+### Tailwind Config File
+
+By default, Tailwind will look for an optional `tailwind.config.js` file at the root of your project where you can define any customizations - see [Tailwind Docs - Configuration](https://tailwindcss.com/docs/configuration).
+
+For example you can add some colors, or change the fonts, or anything you want.
+
+```json
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{html,js}'],
+  theme: {
+    colors: {
+      'blue': '#1fb6ff',
+      'purple': '#7e5bef',
+      'pink': '#ff49db',
+      'orange': '#ff7849',
+      'green': '#13ce66',
+      'yellow': '#ffc82c',
+      'gray-dark': '#273444',
+      'gray': '#8492a6',
+      'gray-light': '#d3dce6',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+    extend: {
+      spacing: {
+        '8xl': '96rem',
+        '9xl': '128rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      }
+    }
+  },
+}
+```
+
+What we are going to do is, that we delete the `mx-auto px-2` and replace it with the following lines in our tailwind config.
+
+```json
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+        './dist/index.html',
+        "./src/**/*.{html,js}"],
+    theme: {
+      container: {
+        center: true,
+        padding: '2rem',
+      },
+    },
+    plugins: [],
+  }
+```
+
+And as we can see, nothing changes.
 
 
 [Tailwind boilerplate](https://github.com/abrahamebij/tailwind-boilerplate)
