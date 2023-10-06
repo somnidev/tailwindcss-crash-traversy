@@ -80,11 +80,28 @@ This is the resulting html.
     <button class="bg-sky-500 text-white font-bold py-2 px-4 my-5 rounded">Find Friends</button>
 ```
 
-we have our button and notice there's no BTN class or anything like that like you would find in traditional frameworks
-it's me it's all made up of these low-level utility classes and what's really cool is if we want a hover effect
-we don't have to add any extra CSS or anything we can simply add a hover
-: and then whatever we want so for instance the color will do blue 400.
+we have our button and notice there's no BTN class or anything like that like you would find in traditional frameworks. It's me it's all made up of these low-level utility classes and what's really cool is, if we want a hover effect, we don't have to add any extra CSS or anything we can simply add a `hover: and then whatever we want for the color.
 
+```html
+<button class="bg-sky-500 hover:bg-sky-400 text-white font-bold py-2 px-4 my-5 rounded">Find Friends</button>
+```
+
+I'm gonna add a container there is a container class like there is and just about every framework and let's move the button into the container div
+here and if I save this and I go back notice that it's not pushed over by default like it is in most frameworks.
+
+```html
+<div class="container">
+    <button class="bg-sky-500 hover:bg-sky-400 text-white font-bold py-2 px-4 my-5 rounded">Find Friends</button>
+</div>
+```
+
+If we want this to be margin auto and maybe add some padding we could add utility classes so we could add some Utility Classes like `mx-auto` which is margin on the x axis auto and for padding we could do `px-2`. 
+
+```html
+<div class="container mx-auto px-2">
+    <button class="bg-sky-500 hover:bg-sky-400 text-white font-bold py-2 px-4 rounded">Find Friends</button>
+</div>
+```
 
 
 [Tailwind boilerplate](https://github.com/abrahamebij/tailwind-boilerplate)
