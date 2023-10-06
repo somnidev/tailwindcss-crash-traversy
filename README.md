@@ -164,5 +164,32 @@ module.exports = {
 
 And as we can see, nothing changes.
 
+### Tailwind apply directive
+
+You can extend you can extend these utility classes within CSS if you want.
+
+If you want a button with you know traditional classes like `btn btn-blue`. We can add this in our `style.css` and use a directive `@apply``.
+
+```json
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply font-bold py-2 px-4 rounded
+}
+.btn-blue {
+    @apply bg-sky-500 text-white
+}
+.btn-blue:hover {
+    @apply hover:bg-sky-400  
+}
+```
+
+Now we can use these classes in our html.
+
+```html
+ <button class="btn btn-blue">Find Groups</button>
+```
 
 [Tailwind boilerplate](https://github.com/abrahamebij/tailwind-boilerplate)
