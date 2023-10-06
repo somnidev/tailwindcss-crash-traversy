@@ -93,7 +93,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
@@ -159,5 +159,8 @@ dist
 # Ignore all local history of files
 .history
 .ionide
+
+# Mac
+.DS_Store
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node
