@@ -62,6 +62,29 @@ Now we run the CLI tool to scan your template files for classes and build your C
 npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch
 ```
 
+## Create Tailwind Components
+
+### Create a Button
+
+Now let's create a component. We'll create a simple button, so in our HTML
+here let's go ahead and add a button tag and just going to use Emmet to add some classes here so for the color will do another blue but different shade let's do 500 and I want to add a color for the
+text so we can use text - and then a color I'm going to use white if we want to make it bold we can use font and bold.
+
+```html
+button.bg-sky-200.text-white.font-bold.py-2.px-4.my-5.rounded
+```
+
+This is the resulting html.
+
+```html
+    <button class="bg-sky-500 text-white font-bold py-2 px-4 my-5 rounded">Find Friends</button>
+```
+
+we have our button and notice there's no BTN class or anything like that like you would find in traditional frameworks
+it's me it's all made up of these low-level utility classes and what's really cool is if we want a hover effect
+we don't have to add any extra CSS or anything we can simply add a hover
+: and then whatever we want so for instance the color will do blue 400.
+
 
 
 [Tailwind boilerplate](https://github.com/abrahamebij/tailwind-boilerplate)
