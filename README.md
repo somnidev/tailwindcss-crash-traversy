@@ -192,4 +192,17 @@ Now we can use these classes in our html.
  <button class="btn btn-blue">Find Groups</button>
 ```
 
+### Alert Component
+
+Let's build an alert component so we're gonna have a div.
+
+```html
+<!-- ALERT COMPONENT -->
+<!-- ALERT COMPONENT -->
+<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-5" role="alert">
+    <strong class="font-bold">Alert!</strong>
+    <span class="block sm:inline">Please update your password</span>
+</div>
+```
+
 [Tailwind boilerplate](https://github.com/abrahamebij/tailwind-boilerplate)
