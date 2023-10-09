@@ -325,5 +325,15 @@ have a flexbox that has two cards within it with two images.
 </nav>
 ```
 
-```html
+## The final Tailwind Document
+
+Don't forget if you want to see the Document just run the following npx command.
+
+```bash
+npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch
 ```
+
+That's it! 
+
+
+![The final document](tailwind-crash-course.png "Final Tailwind Document!")
