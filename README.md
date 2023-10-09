@@ -205,4 +205,49 @@ Let's build an alert component so we're gonna have a div.
 </div>
 ```
 
-[Tailwind boilerplate](https://github.com/abrahamebij/tailwind-boilerplate)
+#### Responsive Design
+
+In order to get a [Responsive Design](https://tailwindcss.com/docs/responsive-design), we can use _utility variants to build adaptive user interfaces_.
+
+[Tailwind boilerplate](https://github.com/abrahamebij/tailwind-boilerplate). There are five breakpoints by default, inspired by common device resolutions: sm, md, lg, xl, 2xl. This works for every utility class in the framework, which means you can change literally anything at a given breakpoint — even things like letter spacing or cursor styles.
+
+>_**Note**:_ Utility Variants are based upon _Media Queries_.
+
+The _Breakpoint Prefix_ `sm` corresponds to the Media Query `@media (min-width: 640px) { ... }`.
+
+>_**Media queries**_ is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution (e.g. mobile and desktop screen size). It became a W3C recommended standard in June 2012,[1] and is a cornerstone technology of responsive web design (RWD).
+
+### Card Component
+
+Let's create a little card component so I'm gonna actually create inside my dist folder an image folder ìmg`because I'm gonna have my logo inside it.
+
+```html
+.max-w-sm.mx-auto.flex.p-6.bg-white.rounded-lg.shadow-xl
+```
+
+I'm going to use max width small and let's move it to the middle so margin x auto and I'm actually gonna use flex here. 
+I'm going to make this a flex box and let's do padding all around p6 and let's make the background white.
+Let's make it rounded and we can do rounded and then we can even use a box shadow class.
+
+```html
+<div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+</div>
+```
+
+##### Don't shrink `flex-shrink-0`
+
+So let's add some content inside of here now and I don't want the any of the content to shrink so we can actually use a flex - shrink - zero class here, which is the same as `shrink-0`.
+
+And now let's add another div with some text an add some classes to h4 we're gonna do text - and you have a text component 3xl, since by default all the headings don't even have any kind of font size it's just a regular font size.
+
+```html
+<div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+    <div class="flex-shrink-0">
+        <img src="img/logo-only.png" alt="" class="h-12 w-12">
+    </div>
+    <div class="ml-6 pt-1">
+        <h4 class="text-xl text-gray-900">Traversy Media</h4>
+        <p class="text-base text-gray-600">You have a new message!</p>
+    </div>
+</div>
+```
