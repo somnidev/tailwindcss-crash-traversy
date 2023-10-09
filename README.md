@@ -111,7 +111,7 @@ By default, Tailwind will look for an optional `tailwind.config.js` file at the 
 
 For example you can add some colors, or change the fonts, or anything you want.
 
-```json
+```javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js}'],
@@ -146,7 +146,7 @@ module.exports = {
 
 What we are going to do is, that we delete the `mx-auto px-2` and replace it with the following lines in our tailwind config.
 
-```json
+```javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -170,7 +170,7 @@ You can extend you can extend these utility classes within CSS if you want.
 
 If you want a button with you know traditional classes like `btn btn-blue`. We can add this in our `style.css` and use a directive `@apply``.
 
-```json
+```javascript
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
