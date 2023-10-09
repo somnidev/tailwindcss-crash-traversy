@@ -251,3 +251,19 @@ And now let's add another div with some text an add some classes to h4 we're gon
     </div>
 </div>
 ```
+
+### Card-Columns
+
+Now let's say that we want some card columns, so basically I just want to
+have a flexbox that has two cards within it with two images.
+
+```html
+
+```
+
+
+```html
+```
+
+```html
+```
